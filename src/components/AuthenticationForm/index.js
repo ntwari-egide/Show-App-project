@@ -13,8 +13,7 @@ const AuthenticationComponent = (props) => {
     const history = useHistory()
 
     const routetonextpage = () => {
-        props.isLogin ? history.push('/reset-password') : 
-        props.isForgotPasswordStep1? history.push('/reset-password-2') :
+        props.isForgotPasswordStep1 ? history.push('/reset-password-2') : 
         history.push('/dashboard')
     }
 
@@ -70,9 +69,9 @@ const AuthenticationComponent = (props) => {
                                 
                                 : '' }
 
-                                { props.isLogin ? <><Button onChange={routetonextpage} type="primary" loading={isSubmitting}> Login </Button> <br /><br /></>  : '' }
-                                { props.isForgotPasswordStep1 ? <><Button onChange={routetonextpage} type="primary" loading={isSubmitting}> Submit </Button> <br /><br /></> : '' }
-                                { props.isForgotPasswordStep2 ? <><Button onChange={routetonextpage} type="primary" loading={isSubmitting}> Change password </Button> <br /><br /></> : '' }
+                                { props.isLogin ? <><Button onClick={routetonextpage} type="primary" loading={isSubmitting}> Login </Button> <br /><br /></>  : '' }
+                                { props.isForgotPasswordStep1 ? <><Button onClick={routetonextpage} type="primary" loading={isSubmitting}> Submit </Button> <br /><br /></> : '' }
+                                { props.isForgotPasswordStep2 ? <><Button onClick={routetonextpage} type="primary" loading={isSubmitting}> Change password </Button> <br /><br /></> : '' }
 
 
 
