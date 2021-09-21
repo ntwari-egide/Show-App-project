@@ -1,13 +1,15 @@
 import AuthenticationComponent from "../../components/AuthenticationForm"
 
-const LoginComponent = () => {
+const LastStepPasswordResetComponent = () => {
+
     return (
         <AuthenticationComponent 
-            isLogin={true} 
+            isLogin={false} 
             isForgotPasswordStep1={false} 
-            isForgotPasswordStep2={false} 
+            isForgotPasswordStep2={true}
         />
     )
+
 }
 
-export default LoginComponent
+export default LastStepPasswordResetComponent

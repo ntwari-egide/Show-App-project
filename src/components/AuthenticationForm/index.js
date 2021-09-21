@@ -4,11 +4,19 @@ import { Typography } from 'antd';
 import { Button } from 'antd';
 import Logo from '../../assets/red_icon.png'
 import "../../styles/login.css"
-import { Link } from "react-router-dom"
+import { Link,useHistory } from "react-router-dom"
 
 const { Title, Text } = Typography;
 
 const AuthenticationComponent = (props) => {
+
+    const history = useHistory()
+
+    const routetonextpage = () => {
+        props.isLogin ? history.push('/reset-password') : 
+        props.isForgotPasswordStep1? history.push('/reset-password-2') :
+        history.push('/dashboard')
+    }
 
     return (
         <div className="form-container">
@@ -62,9 +70,9 @@ const AuthenticationComponent = (props) => {
                                 
                                 : '' }
 
-                                { props.isLogin ? <><Button type="primary" loading={isSubmitting}> Login </Button> <br /><br /></>  : '' }
-                                { props.isForgotPasswordStep1 ? <><Button type="primary" loading={isSubmitting}> Submit </Button> <br /><br /></> : '' }
-                                { props.isForgotPasswordStep2 ? <><Button type="primary" loading={isSubmitting}> Change password </Button> <br /><br /></> : '' }
+                                { props.isLogin ? <><Button onChange={routetonextpage} type="primary" loading={isSubmitting}> Login </Button> <br /><br /></>  : '' }
+                                { props.isForgotPasswordStep1 ? <><Button onChange={routetonextpage} type="primary" loading={isSubmitting}> Submit </Button> <br /><br /></> : '' }
+                                { props.isForgotPasswordStep2 ? <><Button onChange={routetonextpage} type="primary" loading={isSubmitting}> Change password </Button> <br /><br /></> : '' }
 
 
 
