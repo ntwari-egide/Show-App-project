@@ -142,7 +142,7 @@ height: 100vh;
 }
 
 .welcome-container {
-height: 43vh;
+    height: 48vh;
     margin: 1em;
     background: #1e3241;
     width: 97%;
@@ -150,10 +150,10 @@ height: 43vh;
 
 .welcome-container h1.ant-typography {
     color: #fff;
-    width: 72%;
+    width: 77%;
     font-weight: 500;
-    margin-top: 2em;
-    font-size: 2.4em;
+    margin-top: 1.5em;
+    font-size: 3.4em;
 }
 
 .welcome-container button.ant-btn {
