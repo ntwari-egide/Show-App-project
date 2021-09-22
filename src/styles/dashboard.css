@@ -156,6 +156,10 @@ height: 100vh;
     font-size: 3.4em;
 }
 
+.welcome-container img.ant-image-img {
+    height: 20em;
+}
+
 .welcome-container button.ant-btn {
     background: #c12b3d;
     border: none;
@@ -173,15 +177,14 @@ height: 100vh;
 }
 
 .dashboard-center .ant-space.ant-space-vertical.event-container {
-    width: 29%;
     background: #fff;
     margin: 1em;
 }
 
 .dashboard-center h4.ant-typography.event-name {
-    font-size: 1.4em;
-    margin-left: 0.8em;
-    font-weight: 500;
+    font-size: 0.9em;
+    margin-left: 1em;
+    font-weight: 500
 }
 
 .dashboard-center h4.ant-typography.date {
@@ -191,15 +194,95 @@ height: 100vh;
     font-weight: 300;
 }
 
-.dashboard-center h4.ant-typography.status {
-    font-size: 0.8em;
-    padding: 1em;
-    margin-top: -1em;
-    color: #525252;
-    font-weight: 400;
-    width: 29%;
+.dashboard-center p.status {
+    font-size: 10px;
+    line-height: calc(10px * 1.618);
+    margin-bottom: 0px;
+    margin-left: 1em;
 }
 
 .dashboard-center .ant-divider.ant-divider-horizontal {
     margin: 1em 0;
+}
+
+.ant-space.ant-space-vertical.event-container:hover {
+    transform: scale(1.01);
+    transition: ease-in-out 0.3s;
+}
+
+.actions {
+    width: 98%;
+}
+
+
+/* modal form new event */
+
+h3.form-header{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: calc(24px * 1.618);
+}
+
+.avatar-uploader > .ant-upload {
+  width: 128px;
+  height: 128px;
+}
+
+.ant-upload.ant-upload-select.ant-upload-select-picture-card {
+    border-radius: 0px;
+    background: #edf2f5;
+    padding: 116px 32px;
+    width: 352px !important;
+    text-align: center;
+    border: none;
+}
+
+.ant-col.upload-img-h1 {
+    color: gray;
+    margin-left: 1em;
+    margin-bottom: 0em;
+}
+
+.new_event_form input, .new_event_form select, .new_event_form textarea{
+    width: 100%;
+    height: 42px;
+    border: 0;
+    border-bottom: 1px solid #d7e0e8;
+    border-radius: 0px;
+    background: transparent;
+    padding-left: 0px;
+    color: #000 !important;
+    font-size: 13px;
+    box-shadow: none;
+    outline: none;
+}
+
+.new_event_form label{
+    font-size: 10px;
+    color: #000000;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.form-right-content{
+
+}
+
+.ant-modal-body {
+    padding: 0 !important;
+}
+
+.modal-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.ant-modal-footer {
+    padding: 2em 0;
 }

@@ -9,9 +9,6 @@
     background-color: #ffff;
 }
 
-.poppins_font{
-    font-family: 'Poppins', sans-serif;
-}
 
 .margin_top_5{
     margin-top: 5em !important;
@@ -39,4 +36,18 @@
 
 .margin_right_1{
     margin-right: 1em;
+}
+
+.margin_botton_1{
+    margin-bottom: 1em !important;
+}
+
+.cursor_pointer{
+    cursor: pointer;
+}
+
+
+.grey {
+    background-color: #e9ebec;
+    padding: 0.5em
 }

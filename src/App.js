@@ -11,6 +11,7 @@ import './styles/project_theme.css'
 import ResetPasswordComponent from './views/ResetPassword';
 import LastStepPasswordResetComponent from './views/FinishPasswordReset';
 import Dashboard from './views/HomeDashboard';
+import './styles/project_theme_1.css'
 
 function App() {
   return (
