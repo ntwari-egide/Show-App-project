@@ -286,3 +286,13 @@ select:focus, textarea:focus, input[type="text"]:focus, input[type="password"]:f
     -o-transition: 0.2s ease-out;
     transition: 0.2s ease-out;
 }
+
+.normal_text {
+    font-size: 12px  !important;
+    line-height: calc(12px * 1.618)  !important;
+    margin-bottom: 0px  !important;
+}
+
+.white{
+    color: white !important;
+}

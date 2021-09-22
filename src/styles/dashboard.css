@@ -30,6 +30,11 @@ aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
     min-width: 50px !important;
     flex: 0 0 73px !important;
     border-right: 1px solid #f5f8fa;
+    height: 100vh;
+}
+
+.ant-col.ant-col-18.dashboard-center {
+    overflow-y: scroll;
 }
 
 .dashboard-left-icon{
@@ -58,6 +63,12 @@ ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light {
     margin-top: 5em;
 }
 
+.dashboard-header-nav{
+    height: 88px !important;
+    border-bottom: 1px solid #d7e0e8;
+    padding: 16px !important;
+}
+
 .dashboard-header-nav h2{
     font-size: 1.4em;
     margin-top: 1em;
@@ -66,9 +77,11 @@ ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light {
 }
 
 .dashboard-center-right {
-height: 100vh;
+    height: 90vh;
     border-left: 2px solid #00000057;
     padding: 1em 0 1em 1em;
+    background-color: #ffffff;
+    overflow-y: scroll;
 }
 
 .dashboard-center-right h4.ant-typography {
@@ -82,7 +95,8 @@ height: 100vh;
     margin-right: 1.3em;
     width: 44%;
     margin-top: 1em;
-    box-shadow: 0 2px 4px #0000000a;
+    border: 1px solid #f5f8fa;
+    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 4%);
 }
 
 .dashboard-center-right .stats-container h1.ant-typography {
@@ -285,4 +299,104 @@ h3.form-header{
 
 .ant-modal-footer {
     padding: 2em 0;
+}
+
+.collapsible-notification-panel{
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: ease-in-out 0.7s;
+    background: white;
+    width: 35vw;
+    box-shadow: 0 2px 4px #00000024;
+    padding: 0 !important;
+}
+
+.collapsible-notification-panel .header {
+    padding: 16px 32px;
+    height: 70px;
+    background: #c12b3d;
+    background-image: url('http://showapp.awesomity.rw/images/artwork.png');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.collapsible-notification-panel .header h1.ant-typography.subtitle_text.pure_white_color {
+    color: white;
+    font-size: 24px;
+}
+
+.collapsible-notification-panel .subheader {
+    padding: 8px 32px;
+    height: 56px;
+    background-color: #8b1f2c;
+}
+
+
+.collapsible-notification-panel .subheader .ant-select-selector {
+    background: transparent !important;
+    border: none !important;
+    color: #ffff;
+    outline: none;
+    font-weight: 500;
+    width: 9em !important;
+    font-size: 0.8em !important;
+}
+
+.notificaiton-card img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+}
+
+.notificaiton-card h3.ant-typography.normal_text.mabo16.grey_color {
+    font-weight: 300 !important;
+}
+
+.notificaiton-card h3.ant-typography.normal_text.mabo16.grey_color  span {
+    color: black;
+}
+
+.notificaiton-card:hover {
+    background: #f5f8fa;
+}
+.notificaiton-card {
+    padding: 32px 32px;
+    cursor: pointer;
+}
+
+.notification-main-content {
+    overflow-y: scroll;
+}
+
+.notification-main-content::-webkit-scrollbar{
+    background-color: rgb(238, 238, 238);
+    width: 5px;;
+}
+
+.notification-main-content::-webkit-scrollbar-thumb{
+    background-color: rgb(116, 116, 116);
+}
+
+body::-webkit-scrollbar{
+    background-color: rgb(238, 238, 238);
+    width: 5px;;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(116, 116, 116);
+}
+
+
+.dashboard-center-right::-webkit-scrollbar{
+    background-color: rgb(238, 238, 238);
+    width: 5px;;
+}
+
+.dashboard-center-right::-webkit-scrollbar-thumb{
+    background-color: rgb(116, 116, 116);
 }

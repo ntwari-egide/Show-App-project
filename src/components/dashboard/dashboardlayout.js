@@ -4,6 +4,12 @@ import { Image } from 'antd';
 import LogoPng from '../../assets/red_icon.png'
 import {IoIosNotifications} from "react-icons/io" 
 import { useState } from 'react';
+import {IoIosClose} from "react-icons/io"
+import avatarPng from "../../assets/avatar.png"
+import { Select } from 'antd';
+import {AiOutlineRight} from "react-icons/ai"
+
+const { Option } = Select;
 
 const { Header, Content, Sider } = Layout;
 const { Title,Text } = Typography
@@ -15,8 +21,10 @@ const DashboardLayoutComponent = (props) => {
         color: 'rgba(142,152,171,1)'
     })
 
+    const [notificationvisible,setnotificationvisibility] =  useState(false)
+
     return (
-        <Layout style={{ minHeight: '100vh' }} className="dashboard-component poppins_font">
+        <Layout className="dashboard-component poppins_font">
         <Sider collapsible collapsed={false}>
           <div className="logo">
             <Image
@@ -73,7 +81,9 @@ const DashboardLayoutComponent = (props) => {
                                 <p className="margin_right_1"><Text className="font_sm">Yves Honore</Text></p>
 
                                 <div className="margin_right_1">
-                                    <IoIosNotifications className="cursor_pointer"
+                                    <IoIosNotifications 
+                                        className="cursor_pointer"
+                                        onClick={() => setnotificationvisibility(true)}
                                         fontSize={hovericon.fontSize}  
                                         color={hovericon.color} 
                                         onMouseEnter={() => sethovericon({
@@ -89,6 +99,51 @@ const DashboardLayoutComponent = (props) => {
                             </Space>
                     </Col>
                 </Row>
+
+
+                {/* notification container */}
+                
+                {
+                    notificationvisible? 
+                    <Layout className="collapsible-notification-panel">
+                        <Row className="header">
+                            <Col span={22}><Title className="subtitle_text pure_white_color">My activities</Title></Col>
+                            <Col> 
+                                <IoIosClose className="cursor_pointer"  onClick={()=> setnotificationvisibility(false)} fontSize={35} color={'white'} />
+                            </Col>
+                        </Row>
+                        <Row className="subheader">
+                            <Col span={18}><Title level={2} className="normal_text white">Filter activity by</Title></Col>
+                            <Col span={6}> 
+                                <Select defaultValue="Today" >
+                                    <Option value="1">Today</Option>
+                                    <Option value="2">This week</Option>
+                                    <Option value="3">This month</Option>
+                                    <Option value="4">Past 3 month</Option>
+                                    <Option value="5">This year</Option>
+                                </Select>                                
+                            </Col>
+                        </Row>
+
+                        <div className="notification-main-content">
+                            {
+                                [...Array(6)].map((id) => <>
+                                    <Row className="notificaiton-card">
+                                        <Col span={4}><Image preview={false} src={avatarPng}/></Col>
+                                        <Col span={17}>
+                                            <Title level={3} className="normal_text mabo16 grey_color"><span>Yves Honore</span> and <span>245</span> others registered on your event <span>Africa Young Techies Summit 2020</span>. </Title>
+                                            <Title level={3} className="time normal_text mabo16 grey_color">14 Feb 2020</Title>
+                                        </Col>
+                                        <Col span={1} className="margin_left_1">
+                                            <AiOutlineRight fontSize={15} color={'gray'}/>
+                                        </Col>
+                                    </Row>
+                                </>)
+                            }
+                        </div>
+                    </Layout> : ''
+                }
+
             </Header>
             <Content>
                 {props.children}
