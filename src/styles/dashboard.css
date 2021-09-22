@@ -1,0 +1,205 @@
+#components-layout-demo-side .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.ant-layout-sider-trigger {
+    display: none;
+}
+
+.ant-layout-sider {
+    background: #ffffff !important;
+}
+
+.dashboard-component .logo img.ant-image-img {
+    height: 2em;
+    width: 2em;
+    margin: 1.5em;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
+    width: 84px !important;
+    max-width: 73px !important;
+    min-width: 50px !important;
+    flex: 0 0 73px !important;
+    border-right: 1px solid #f5f8fa;
+}
+
+.dashboard-left-icon{
+    height: 3em !important;
+}
+
+h5.ant-typography {
+    margin-top: -2em;
+    font-size: 0.6em;
+    text-align: center;
+    width: 156%;
+    color: #8e98ab;
+    font-weight: 500;
+}
+
+li.ant-menu-item.ant-menu-item-only-child {
+    padding-left: 10px !important;
+    height: 59px !important;
+}
+
+li.ant-menu-item.ant-menu-item-only-child svg {
+    margin-left: 1.4em;
+}
+
+ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light {
+    margin-top: 5em;
+}
+
+.dashboard-header-nav h2{
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-left: 1em;
+    font-weight: 500;
+}
+
+.dashboard-center-right {
+height: 100vh;
+    border-left: 2px solid #00000057;
+    padding: 1em 0 1em 1em;
+}
+
+.dashboard-center-right h4.ant-typography {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.dashboard-center-right .stats-container {
+    background: #fff;
+    padding: 1.5em;
+    margin-right: 1.3em;
+    width: 44%;
+    margin-top: 1em;
+    box-shadow: 0 2px 4px #0000000a;
+}
+
+.dashboard-center-right .stats-container h1.ant-typography {
+    color: #c12b3d;
+    font-weight: 200;
+    font-size: 2em;
+}
+
+.dashboard-center-right .stats-container h2 {
+    font-size: 0.7em;
+    font-weight: 400;
+    margin-top: -1em;
+}
+
+.dashboard-center-right .interests-container{
+    background: #ffff;
+    padding: 1em;
+    width: 93%;
+    margin-top: 1em;
+}
+
+.dashboard-center-right .interests-container span.ant-typography {
+    font-size: 0.8em;
+}
+
+.dashboard-center-right .interests-container span.ant-typography.number {
+    color: #c12b3d;
+}
+
+.interests-container .ant-slider-handle {
+    display: none;
+}
+
+.interests-container .ant-slider-rail {
+    width: 18vw;
+}
+
+.interests-container .ant-slider-step {
+    background: #c12b3d !important;
+}
+
+.interests-container .ant-slider.ant-slider-disabled {
+    margin: 0 !important;
+    margin-bottom: 1em !important;
+}
+
+.dashboard-center-right button.ant-btn.ant-btn-primary {
+    background: #1e3241;
+    border: none;
+    color: #c12b3d;
+    font-size: 0.7em;
+    margin-top: 2em;
+    height: 6em;
+    width: 93%;
+    border-radius: 0;
+    margin-top: 2em;
+}
+
+.welcome-container {
+height: 43vh;
+    margin: 1em;
+    background: #1e3241;
+    width: 97%;
+}
+
+.welcome-container h1.ant-typography {
+    color: #fff;
+    width: 72%;
+    font-weight: 500;
+    margin-top: 2em;
+    font-size: 2.4em;
+}
+
+.welcome-container button.ant-btn {
+    background: #c12b3d;
+    border: none;
+    color: #fff;
+    font-size: 0.9em;
+    height: 3em;
+    border-radius: 0;
+}
+
+.dashboard-center .center-title{
+    font-size: 1.4em;
+    margin-top: 1em;
+    margin-left: 0.7em;
+    font-weight: 500;
+}
+
+.dashboard-center .ant-space.ant-space-vertical.event-container {
+    width: 29%;
+    background: #fff;
+    margin: 1em;
+}
+
+.dashboard-center h4.ant-typography.event-name {
+    font-size: 1.4em;
+    margin-left: 0.8em;
+    font-weight: 500;
+}
+
+.dashboard-center h4.ant-typography.date {
+    margin-left: 1.4em;
+    font-size: 0.8em;
+    color: grey;
+    font-weight: 300;
+}
+
+.dashboard-center h4.ant-typography.status {
+    font-size: 0.8em;
+    padding: 1em;
+    margin-top: -1em;
+    color: #525252;
+    font-weight: 400;
+    width: 29%;
+}
+
+.dashboard-center .ant-divider.ant-divider-horizontal {
+    margin: 1em 0;
+}
